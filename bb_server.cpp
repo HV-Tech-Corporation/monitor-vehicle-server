@@ -129,7 +129,7 @@ void Server::register_uri_handlers() {
         handle_get_ocr(req, res);
     };
     uri_handlers_[{"GET", "/dir"}] = [this](const http::request<http::string_body>& req, http::response<http::string_body>& res) {
-        handle_get_ocr(req, res);
+        handle_get_dir(req, res);
     };    
 }
 
